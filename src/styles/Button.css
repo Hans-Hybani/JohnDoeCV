@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Raleway:wght@500&display=swap');
+
+.all__button{
+        font-family: 'Nunito Sans', sans-serif;
+        border-radius: 5px;
+        background-color: #0d6efd ;
+        border: solid #0d6efd;
+        color: #fff;
+        padding: 15px;
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2.0em;
+        text-align: center;
+        font-weight: 600;
+}
+@media screen and (max-width: 860px) {
+        .all__button{
+                position: absolute;
+                top: 45%;
+                padding: 7px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: center;
+                font-weight: 600;
+                font-size: 0.9em;
+        } 
+}
+

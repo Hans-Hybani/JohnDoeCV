@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import '../styles/navbar.css';
+import '../styles/header.css';
 import hamburgerMenu from '../assets/hamburgerMenu.png'
 
-function Navbar(props) {
+function Header(props) {
         const [deroulement,setDeroulement] = useState("nav__menu");
         const hamburger = () => {
                 deroulement === "nav__menu" ? setDeroulement("nav__menu nav__deroulement"): setDeroulement("nav__menu")
@@ -24,4 +24,4 @@ function Navbar(props) {
         )
 }
 
-export default Navbar;
+export default Header;

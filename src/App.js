@@ -1,10 +1,10 @@
 import Accueil from "./components/accueil";
-import Navbar from "./components/navbar";
+import Header from "./components/header";
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Header/>
       <Accueil/>
     </div>
   );
