@@ -4,8 +4,15 @@ import developpeurBureau from '../assets/developpeurBureau.jpg'
 import '../styles/accueil.css'
 import '../styles/Button.css'
 import Button from "./button";
+import ContextualExample from "./progressbar"
 
 function Accueil(props) {
+        const handleScrollToSection = () => {
+                const Apropos = document.getElementById('apropos');
+                if (Apropos) {
+                        Apropos.scrollIntoView({ behavior: 'smooth' });
+                }
+              };
         const titre = 'Bonjour, je suis John Doe'
         const sousTitre = 'Développeur full stack'
 
@@ -16,10 +23,10 @@ function Accueil(props) {
                                 <h1 className="h1__conteneur">{titre}</h1>
                                 <h2 className="h2__conteneur">{sousTitre}</h2>
                                 {/* <button className="all__button">En savoir plus</button> */}
-                                <Button className="all__button"/>
+                                <Button className="all__button" onClick={handleScrollToSection} />
                         </div>
                         <div className="apropos__conteneur">
-                                <div className="apropos__conteneur__carte">
+                                <div className="apropos__conteneur__carte" id="apropos" >
                                         <div className="apropos__conteneur__carte__text">
                                                 <h3 className="apropos__titre">A propos</h3>
                                                 <hr className="bare"></hr>
@@ -38,28 +45,7 @@ function Accueil(props) {
                                         <div className="apropos__conteneur__carte__image">
                                                 <img src={developpeurBureau} alt='developpeur' className="img__dev"/>
                                                 <h4 className="competence">Mes compétences</h4>
-                                                <div className="competence__porcentage">
-                                                        <div className="competence__porcentage__bloc">
-                                                                HTLM5 90%
-                                                                <div className="bar"><div className="html"></div></div>
-                                                        </div>
-                                                        <div className="competence__porcentage__bloc">
-                                                                CSS3 80%
-                                                                <div className="bar"><div className="css"></div></div>
-                                                        </div>
-                                                        <div className="competence__porcentage__bloc">
-                                                                JAVASCRIPT 70%
-                                                                <div className="bar"><div className="js"></div></div>
-                                                        </div>
-                                                        <div className="competence__porcentage__bloc"> 
-                                                                PHP 60%
-                                                                <div className="bar"><div className="php"></div></div>
-                                                        </div>
-                                                        <div className="competence__porcentage__bloc"> 
-                                                                REACT 50%
-                                                                <div className="bar"><div className="react"></div></div>
-                                                        </div>
-                                                </div>
+                                                <ContextualExample/>
                                         </div>
                                 </div>
                         </div>

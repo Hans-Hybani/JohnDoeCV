@@ -8,15 +8,10 @@
         padding: 7px 80px 7px 80px ;
         font-family: 'Nunito Sans', sans-serif;
 }
-.logo{
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: 600;
-}
 .nav__menu{
         list-style: none;
         display: flex;
+        margin-top: 25px;
         gap: 2rem;
 }
 .nav__menu li a:hover{
@@ -42,11 +37,12 @@
         display: none;
 }
 
-@media screen and (max-width: 873px) {
+@media screen and (max-width: 860px) {
         .nav__hamburger{
                 display: block;
+                margin-right: -30px;
         }
-        .nav__menu{
+         .nav__menu{
                 z-index: 1000;
                 position: fixed;
                 top: 4vh;

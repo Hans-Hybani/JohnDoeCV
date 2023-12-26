@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Raleway:wght@500&display=swap');
+
+footer{
+        background-color: #EEE;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom:20px ;
+}
+.logoFoot{
+        text-decoration: none;
+        color: #000;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-left: 20px;
+}
+.colonne__1 a{
+        text-decoration: none;
+        color: #444;
+}
+.reseaux{
+        display: flex;
+        gap: 10px;
+}
+.img__reseaux{
+        width: 30px;
+}
+.colonne__2{
+        margin-top: 31px;
+        color: #444;
+}
+.colonne__2 a{
+        text-decoration: none;
+        color: #444;
+}
+.div__liensUtilies{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+}
+.div__liensUtilies img{
+        width: 20px;
+}
+
+.colonne__3{
+        margin-top: 31px;
+        color: #444;
+}
+.colonne__3 a{
+        text-decoration: none;
+        color: #444;
+}
+.div__realisations{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+}
+.div__realisations img{
+        width: 20px;
+}
+
+.colonne__4{
+        margin-top: 31px;
+        color: #444;
+}
+.colonne__4 a{
+        text-decoration: none;
+        color: #444;
+}
+.div__article{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+}
+.div__article img{
+        width: 20px;
+}
+
+/* Styles communs à toutes les tailles d'écran */
+footer {
+        background-color: #EEE;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
+    
+    .logoFoot {
+        text-decoration: none;
+        color: #000;
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    
+    /* Media query pour les écrans de taille moyenne */
+    @media screen and (max-width: 768px) {
+        footer {
+            flex-direction: column;
+            padding-left: 20px;
+        }
+    
+        .colonne__1,
+        .colonne__2,
+        .colonne__3,
+        .colonne__4 {
+            margin-top: 20px;
+           
+        }
+    
+        .logoFoot {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    }
+    
+    /* Media query pour les écrans de petite taille */
+    @media screen and (max-width: 480px) {
+        .div__liensUtilies,
+        .div__realisations,
+        .div__article {
+            flex-direction: column;
+        }
+    
+        .div__liensUtilies img,
+        .div__realisations img,
+        .div__article img {
+            margin-right: 10px;
+        }
+    }
+    

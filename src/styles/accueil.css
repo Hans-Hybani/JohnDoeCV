@@ -38,29 +38,32 @@ strong{
         font-size: 2.8em;
         width: 80%;
 }
-@media screen and (max-width: 860px) {
-        .h1__conteneur{
-                position: absolute;
-                top: 20%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                text-align: center;
-                font-weight: 600;
-                font-size: 2.3em;
+@media screen and (max-width: 768px) {
+        .h1__conteneur {
+            font-size: 3em; 
+            width: 100%; 
+            top: 20%;
         }
-
-        .h2__conteneur{
-                position: absolute;
-                top: 32%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                color: white;
-                text-align: center;
-                font-weight: 600;
-                font-size: 1.5em;
-        }       
+    
+        .h2__conteneur {
+            font-size: 2em;
+            width: 100%;
+            top: 32%; 
+        }
 }
+@media screen and (min-width: 784px) and (max-width: 1126px) {
+        .h1__conteneur {
+            top: 190px;
+            font-size: 3.5em; 
+            width: 80%;
+        }
+    
+        .h2__conteneur {
+            top: 290px;
+            font-size: 2em;
+            width: 70%; 
+        }
+ }
 .apropos__conteneur{
         display: flex;
         justify-content: center;
@@ -85,7 +88,7 @@ strong{
         border:1px solid #0d6efd;
         width: 500px;
         margin-left: 0;
-        margin-top: -15px;
+        margin-top: 10px;
 }
 .apropos__paragraph{
         width: 500px;
@@ -100,57 +103,6 @@ strong{
 }
 .competence__porcentage__bloc{
         margin-bottom: 10px;
-}
-.bar{
-        background-color: #EEE;
-        height: 20px;
-        border: 1px solid #EEE;
-        border-radius: 10px;
-        margin-top: 5px;
-}
-.bar div{
-        margin-top: -1px;
-        margin-left: -1px;
-}
-.html{
-        background-color:rgb(193, 34, 34);
-        height: 20px;
-        border: 1px solid rgb(193, 34, 34);
-        border-radius: 10px;
-        width: 90%;
-        margin-top: 5px; 
-}
-.css{
-        background-color:rgb(2, 167, 255);
-        height: 20px;
-        border: 1px solid rgb(2, 167, 255);
-        border-radius: 10px;
-        width: 80%;
-        margin-top: 5px;  
-}
-.js{
-        background-color:rgb(251, 255, 14);
-        height: 20px;
-        border: 1px solid rgb(251, 255, 14);
-        border-radius: 10px;
-        width: 70%;
-        margin-top: 5px; 
-}
-.php{
-        background-color:rgb(0, 194, 36);
-        height: 20px;
-        border: 1px solid rgb(0, 194, 36);
-        border-radius: 10px;
-        width: 60%;
-        margin-top: 5px; 
-}
-.react{
-        background-color:rgb(38, 71, 255);
-        height: 20px;
-        border: 1px solid rgb(38, 71, 255);
-        border-radius: 10px;
-        width: 50%;
-        margin-top: 5px; 
 }
 @media screen and (max-width: 860px) {
         .apropos__conteneur {
@@ -175,6 +127,7 @@ strong{
     
         .bare {
             width: 100%;
+            margin-top: 5px;
         }
     
         .apropos__paragraph, .bar {
