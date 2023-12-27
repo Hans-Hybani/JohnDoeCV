@@ -1,0 +1,38 @@
+.realisation__bloc{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        margin-bottom: 60px;
+}
+.realisation{
+        text-align: center;
+        border-radius: 15px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.248);
+        overflow: hidden;
+        width: 400px;
+        height: 500px;
+}
+.realisation img{
+        width: 400px;
+        margin-bottom: 20px;
+        object-fit: cover;
+}
+.buttonRealiation{
+        background-color: #ffffff00;
+        border: solid 1px #0d6efd;
+        padding: 5px;
+        width: 60px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+}
+.basDiv{
+        background-color: #EEE;
+        padding-top: 5px;
+}
+@media screen and (max-width: 1128px){
+        .realisation__bloc{
+                gap: 30px;
+        }
+}

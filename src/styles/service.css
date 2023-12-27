@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Raleway:wght@500&display=swap');
+
+h1, h2, strong{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+}
+p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+}
+.fond__service img{
+        width: 100%;
+        height: 150px;
+}
+.titre__service{
+        text-align: center;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+}
+.titre__service h1 ,p, hr{
+        width: 100%;
+}
+.titre__service hr{
+        border: 2px solid #0d6dfd;
+        width: 200px;
+}
+.img__service {
+        width: 60px;
+}
+.carte__service{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 90px;
+        margin-bottom: 90px;
+}
+.carte{
+        border-radius: 15px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.248);
+        text-align: center;
+        height: 300px;
+        padding: 30px;
+}
+.italique{
+        font-style: italic;
+}
+@media screen and (max-width: 1128px){
+        .carte__service{
+                gap: 30px;
+        }
+}
