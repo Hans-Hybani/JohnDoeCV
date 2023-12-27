@@ -3,6 +3,7 @@ import '../styles/header.css';
 import hamburgerMenu from '../assets/hamburgerMenu.png'
 import Logo from "./logo";
 import { Link } from 'react-router-dom';
+// import { Button } from "bootstrap";
 
 function Header(props) {
         window.addEventListener("scroll", () => {
@@ -18,13 +19,13 @@ function Header(props) {
                         <ul className={deroulement}>
                                 <li className="nav__liste"><Link to="/" className="nav_lien">ACCUEIL</Link></li>
                                 <li className="nav__liste"><Link to="/services"  className="nav_lien">SERVICES</Link></li>
-                                <li className="nav__liste"><Link to="/realisations"  className="nav_lien">REALISATION</Link></li>
+                                <li className="nav__liste"><Link to="/realisation"  className="nav_lien">REALISATION</Link></li>
                                 <li className="nav__liste"><Link to="/blog"  className="nav_lien">BLOG</Link></li>
-                                <li className="nav__liste"><Link to="/ma-contacter"  className="nav_lien">MA CONTACTER</Link></li>
+                                <li className="nav__liste"><Link to="/contacter"  className="nav_lien">ME CONTACTER</Link></li>
                         </ul>
-                        <a onClick={hamburger} href="#" className="nav__hamburger">
+                        <button type="button" onClick={hamburger}  className="nav__hamburger">
                                 <img src={hamburgerMenu} alt='icone menu hamburgerMenu' className='hamburger'/>
-                        </a>
+                        </button>
                 </nav>
                 
         )

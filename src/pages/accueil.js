@@ -3,8 +3,9 @@ import softwaredeveloper from '../assets/softwaredeveloper.jpg'
 import developpeurBureau from '../assets/developpeurBureau.jpg'
 import '../styles/accueil.css'
 import '../styles/Button.css'
-import Button from "./button";
-import ContextualExample from "./progressbar"
+import Button from "../components/button";
+import ContextualExample from "../components/progressbar"
+
 
 function Accueil(props) {
         const handleScrollToSection = () => {
@@ -48,7 +49,7 @@ function Accueil(props) {
                                                 <ContextualExample/>
                                         </div>
                                 </div>
-                        </div>
+                        </div>              
                 </div>
         )
 }

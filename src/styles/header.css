@@ -31,7 +31,6 @@
         background: #fff;
 }
 .nav__hamburger{
-        color: #fff;
         cursor: pointer;
         text-decoration: none;
         display: none;
@@ -41,6 +40,7 @@
         .nav__hamburger{
                 display: block;
                 margin-right: -30px;
+                background-color: #444;
         }
          .nav__menu{
                 z-index: 1000;
