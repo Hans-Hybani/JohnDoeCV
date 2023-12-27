@@ -8,21 +8,27 @@
         padding: 7px 80px 7px 80px ;
         font-family: 'Nunito Sans', sans-serif;
 }
-.logo{
-        text-decoration: none;
-        color: #fff;
-        font-size: 1.5em;
-        font-weight: 600;
-}
 .nav__menu{
         list-style: none;
         display: flex;
+        margin-top: 25px;
         gap: 2rem;
-        font-weight: 400;
+}
+.nav__menu li a:hover{
+        color: rgb(17, 16, 16);
+        background: #fff;
+        border-radius: 30px;
+        padding: 5px;
+        transition: 0.3s;
 }
 .nav_lien{
         text-decoration: none;
         color: #fff;
+        font-weight: 400;
+}
+.nav__menu li a:nav_lien{
+        color: rgb(17, 16, 16);
+        background: #fff;
 }
 .nav__hamburger{
         color: #fff;
@@ -30,12 +36,14 @@
         text-decoration: none;
         display: none;
 }
-/* Tablette et écrans plus larges */
+
 @media screen and (max-width: 860px) {
         .nav__hamburger{
                 display: block;
+                margin-right: -30px;
         }
-        .nav__menu{
+         .nav__menu{
+                z-index: 1000;
                 position: fixed;
                 top: 4vh;
                 right: 0;
@@ -43,7 +51,7 @@
                 padding-top: 20px;
                 padding-left: 80px;
                 left: -1px;
-                height: 53vh;
+                height: 43vh;
                 background-color: #444;
                 flex-direction: column;
                 transform: translateX(100%);

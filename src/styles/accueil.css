@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Raleway:wght@500&display=swap');
 
-h1,h2,h3,p{
+h1,h2,h3,h4,strong{
         font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
 }
-
+p{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+}
+strong{
+        font-weight: 600;
+}
 .img__conteneur img{
         width: 100%;
         filter: brightness(0.3);       
@@ -18,17 +25,124 @@ h1,h2,h3,p{
         text-align: center;
         font-weight: 600;
         font-size: 4.5em;
-        width: 100%;
+        width: 90%;
 }
 .h2__conteneur{
         position: absolute;
-        top: 78%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
         text-align: center;
         font-weight: 600;
         font-size: 2.8em;
-        width: 100%;
+        width: 80%;
 }
-
+@media screen and (max-width: 768px) {
+        .h1__conteneur {
+            font-size: 3em; 
+            width: 100%; 
+            top: 20%;
+        }
+    
+        .h2__conteneur {
+            font-size: 2em;
+            width: 100%;
+            top: 32%; 
+        }
+}
+@media screen and (min-width: 784px) and (max-width: 1126px) {
+        .h1__conteneur {
+            top: 190px;
+            font-size: 3.5em; 
+            width: 80%;
+        }
+    
+        .h2__conteneur {
+            top: 290px;
+            font-size: 2em;
+            width: 70%; 
+        }
+ }
+.apropos__conteneur{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+}
+.apropos__conteneur__carte{
+        display: flex;
+        justify-content:space-around;
+        gap: 45px;
+        width: 75%;
+        border: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 8px 1px black;
+}
+.apropos__titre{
+        font-weight: 600;
+}
+.bare{
+        background-color: #0d6efd;
+        border:1px solid #0d6efd;
+        width: 500px;
+        margin-left: 0;
+        margin-top: 10px;
+}
+.apropos__paragraph{
+        width: 500px;
+}
+.img__dev{
+        width: 400px;
+        border-radius: 10px;
+        margin-top: 10px;
+}
+.competence{
+        margin-top: 5px;
+}
+.competence__porcentage__bloc{
+        margin-bottom: 10px;
+}
+@media screen and (max-width: 860px) {
+        .apropos__conteneur {
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    
+        .apropos__conteneur__carte {
+            width: 100%;
+            padding: 15px;
+        }
+    
+        .img__dev {
+            width: 100%;
+            max-width: 400px;
+        }
+    
+        .competence__porcentage {
+            width: 100%;
+        }
+    
+        .bare {
+            width: 100%;
+            margin-top: 5px;
+        }
+    
+        .apropos__paragraph, .bar {
+            width: 100%;
+        }
+    }
+    
+@media screen and (min-width: 861px) and (max-width: 1326px) {
+        .apropos__conteneur__carte {
+            width: 90%; 
+            padding: 15px;
+        }
+    
+        .img__dev {
+            max-width: 100%;
+        }
+    }
+    

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&family=Raleway:wght@500&display=swap');
+
+.all__button{
+        font-family: 'Nunito Sans', sans-serif;
+        border-radius: 5px;
+        background-color: #0d6efd ;
+        border: solid #0d6efd;
+        color: #fff;
+        padding: 15px;
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2.0em;
+        text-align: center;
+        font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+        .all__button {
+            font-size: 0.8em;
+            padding: 10px;
+            top: 42%;
+        }
+    }
+    @media screen and (min-width: 784px) and (max-width: 1126px){
+        .all__button {
+                font-size: 1.8em;
+                padding: 10px;
+                top: 62%; 
+            }
+    }
+/* Media query pour les écrans de taille moyenne (784px à 1126px) */
+@media screen and (min-width: 784px) and (max-width: 1126px) {
+    .colonne__1,
+    .colonne__2,
+    .colonne__3,
+    .colonne__4 {
+        flex: 1;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .colonne__3 {
+        order: 3; /* Réorganiser pour que la colonne 3 soit en dessous de la colonne 1 */
+    }
+
+    .colonne__4 {
+        order: 4; /* Réorganiser pour que la colonne 4 soit en dessous de la colonne 2 */
+    }
+
+    .div__liensUtilies,
+    .div__realisations,
+    .div__article {
+        flex-direction: row;
+    }
+
+    .div__liensUtilies img,
+    .div__realisations img,
+    .div__article img {
+        margin-right: 10px;
+    }
+}
