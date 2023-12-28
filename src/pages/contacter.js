@@ -6,6 +6,7 @@ import Map from "../components/map"
 import localisateur from '../assets/localisateur.png';
 import mobile from '../assets/mobile.png'
 
+
 function Contacter() {
         useEffect(() => {
                 document.body.classList.add('mon-composant-body');

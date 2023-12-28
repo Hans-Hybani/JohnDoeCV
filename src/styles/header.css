@@ -11,20 +11,14 @@
 .nav__menu{
         list-style: none;
         display: flex;
-        margin-top: 25px;
+        margin-top: 10px;
         gap: 2rem;
-}
-.nav__menu li a:hover{
-        color: rgb(17, 16, 16);
-        background: #fff;
-        border-radius: 30px;
-        padding: 5px;
-        transition: 0.3s;
 }
 .nav_lien{
         text-decoration: none;
         color: #fff;
         font-weight: 400;
+        text-transform: uppercase;
 }
 .nav__menu li a:nav_lien{
         color: rgb(17, 16, 16);
@@ -38,6 +32,9 @@
 .hamburger{
         font-size: 25px;
         color: #fff;
+}
+.logo{
+        margin-left: -50px;
 }
 
 @media screen and (max-width: 860px) {
@@ -53,15 +50,23 @@
                 right: 0;
                 text-align: left;
                 padding-top: 20px;
+                padding-bottom: 30px;
                 padding-left: 80px;
                 left: -1px;
                 height: 43vh;
                 background-color: #444;
+                display: flex;
+                flex-wrap: wrap;
                 flex-direction: column;
                 transform: translateX(100%);
                 transition: 0.3s ease-in-out;
         }
+        .nav_lien{
+                width: 100%;
+                margin-left: -45px;
+                margin-bottom: -40px;
+        }
 }
 .nav__deroulement{
         transform: translateX(0);
-}
+} 
