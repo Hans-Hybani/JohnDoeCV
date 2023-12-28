@@ -2,10 +2,12 @@ import React from "react";
 import Logo from "./logo";
 import '../styles/footer.css'
 import chevrondroit from '../assets/chevrondroit.png'
-import github from '../assets/github.png'
-import linkdin from '../assets/linkdin.png'
-import twitter from '../assets/twitter.png'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 
 function Footer(params) {
@@ -15,14 +17,14 @@ function Footer(params) {
                                 <div className="colonne__1">
                                         <a href="#" className="logoFoot"><Logo/></a>
                                         <address class="adress_bloc_container">
-                                                <a href="https://maps.app.goo.gl/pvsrmDcVNeYYxNNx7"><p>40 rue Laure Diebold<br></br>
+                                                <a href="https://maps.app.goo.gl/pvsrmDcVNeYYxNNx7" target="blank"><p>40 rue Laure Diebold<br></br>
                                                         69009 Lyon, France</p></a>
                                                 <a href="tel:0620304050">06 20 30 40 50</a>
                                         </address>
                                         <div className="reseaux">
-                                                <a href=""><img src={github} alt='github' className="img__reseaux"/></a>
-                                                <a href=""><img src={linkdin} alt='linkdin' className="img__reseaux"/></a>
-                                                <a href=""><img src={twitter} alt='twitter' className="img__reseaux"/></a>
+                                                <FontAwesomeIcon icon={faGithub} className="img__reseaux" />
+                                                <FontAwesomeIcon icon={faLinkedin} className="img__reseaux" />
+                                                <FontAwesomeIcon icon={faTwitter} className="img__reseaux" />
                                         </div>
                                 </div>
                                 <div className="colonne__2">

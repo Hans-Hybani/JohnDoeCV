@@ -3,7 +3,8 @@ import '../styles/header.css';
 import hamburgerMenu from '../assets/hamburgerMenu.png'
 import Logo from "./logo";
 import { Link } from 'react-router-dom';
-// import { Button } from "bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 function Header(props) {
         window.addEventListener("scroll", () => {
@@ -24,7 +25,7 @@ function Header(props) {
                                 <li className="nav__liste"><Link to="/contacter"  className="nav_lien">ME CONTACTER</Link></li>
                         </ul>
                         <button type="button" onClick={hamburger}  className="nav__hamburger">
-                                <img src={hamburgerMenu} alt='icone menu hamburgerMenu' className='hamburger'/>
+                                <FontAwesomeIcon icon={faBars} className='hamburger' />
                         </button>
                 </nav>
                 

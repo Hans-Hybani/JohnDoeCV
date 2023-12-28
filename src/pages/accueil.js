@@ -6,7 +6,6 @@ import '../styles/Button.css'
 import Button from "../components/button";
 import ContextualExample from "../components/progressbar"
 
-
 function Accueil(props) {
         const handleScrollToSection = () => {
                 const Apropos = document.getElementById('apropos');
@@ -23,7 +22,6 @@ function Accueil(props) {
                                 <img src={softwaredeveloper} alt='fond ecran' className="img__image"/>
                                 <h1 className="h1__conteneur">{titre}</h1>
                                 <h2 className="h2__conteneur">{sousTitre}</h2>
-                                {/* <button className="all__button">En savoir plus</button> */}
                                 <Button className="all__button" onClick={handleScrollToSection} />
                         </div>
                         <div className="apropos__conteneur">

@@ -35,6 +35,10 @@
         text-decoration: none;
         display: none;
 }
+.hamburger{
+        font-size: 25px;
+        color: #fff;
+}
 
 @media screen and (max-width: 860px) {
         .nav__hamburger{
@@ -45,7 +49,7 @@
          .nav__menu{
                 z-index: 1000;
                 position: fixed;
-                top: 4vh;
+                top: 3vh;
                 right: 0;
                 text-align: left;
                 padding-top: 20px;
