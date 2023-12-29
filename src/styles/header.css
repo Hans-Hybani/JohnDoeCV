@@ -38,7 +38,14 @@
 }
 .logo{
         margin-left: -50px;
-        pointer-events: none;
+        color: #fff;
+}
+.logo:hover{
+        color: #fff;
+}
+.logo:visited{
+        color: #fff;
+
 }
 
 @media screen and (max-width: 860px) {
