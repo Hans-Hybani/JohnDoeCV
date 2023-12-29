@@ -22,7 +22,7 @@ function Navigation() {
     <>
       <Navbar className="nav">
         <Container>
-          <Navbar.Brand as={Link} to="/acceuil" className="logo"><Logo /></Navbar.Brand>
+          <Navbar.Brand as={Link} to="/" className="logo"><Logo /></Navbar.Brand>
           <Nav className={deroulement}>
             <Nav.Link as={Link} to="/acceuil" className="nav_lien">acceuil</Nav.Link>
             <Nav.Link as={Link} to="/services" className="nav_lien">services</Nav.Link>
