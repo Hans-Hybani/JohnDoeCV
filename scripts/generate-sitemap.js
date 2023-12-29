@@ -14,7 +14,7 @@ const appRoutes = [
 ];
 
 const sitemap = Sitemap.createSitemap({
-  hostname: 'https://mztwxl-3000.csb.app/',
+  hostname: 'https://john-doe-cv.vercel.app/',
   urls: appRoutes.map(route => ({ url: route, changefreq: 'daily', priority: 0.7 })),
 });
 
