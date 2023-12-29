@@ -6,6 +6,7 @@ import Contacter from "./pages/contacter";
 import Blog from "./pages/blog";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import Profil from "./pages/profilGit"
 import {Routes,Route } from "react-router-dom/dist";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/blog" element={<Blog/>}/>
           <Route path="/contacter" element={<Contacter/>}/>
           <Route path="/mentionLegales" element={<Legales/>}/>
+          <Route path="/profilGit" element={<Profil/>}/>
         </Routes>
       <Footer/>
     </div>

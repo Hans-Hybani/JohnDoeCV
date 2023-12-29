@@ -16,9 +16,12 @@
 }
 .nav_lien{
         text-decoration: none;
-        color: #fff;
+        color: #d3d3d3;
         font-weight: 400;
         text-transform: uppercase;
+}
+.nav_lien:hover{
+        color: #fff;
 }
 .nav__menu li a:nav_lien{
         color: rgb(17, 16, 16);
@@ -35,6 +38,7 @@
 }
 .logo{
         margin-left: -50px;
+        pointer-events: none;
 }
 
 @media screen and (max-width: 860px) {

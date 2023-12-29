@@ -11,12 +11,12 @@
 }
 @media screen and (max-width: 768px) {
         .card {
-            width: calc(50% - 30px); /* Deux colonnes avec 30px d'espace entre chaque carte */
+            width: calc(50% - 30px);
         }
     }
     
     @media screen and (max-width: 576px) {
         .card {
-            width: 100%; /* Une colonne pour les écrans plus petits */
+            width: 100%;
         }
     }

@@ -21,7 +21,7 @@ function Footer(params) {
                                                 <a href="tel:0620304050">06 20 30 40 50</a>
                                         </address>
                                         <div className="reseaux">
-                                                <Link to="https://github.com/" target="_blank"><FontAwesomeIcon icon={faGithub} className="img__reseaux" /></Link>
+                                                <Link to="/profilGit" target="_blank"><FontAwesomeIcon icon={faGithub} className="img__reseaux" /></Link>
                                                 <Link to="https://www.linkedin.com/" target="_blank"><FontAwesomeIcon icon={faLinkedin} className="img__reseaux" /></Link>
                                                 <Link to="https://twitter.com/" target="_blank"><FontAwesomeIcon icon={faTwitter} className="img__reseaux" /></Link>
                                         </div>

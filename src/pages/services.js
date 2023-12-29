@@ -1,9 +1,12 @@
 import React from "react";
-import ordinateur from "../assets/ordinateur.png"
-import tableaustatistique from "../assets/tableaustatistique.png"
-import fichierhtml from '../assets/fichierhtml.png'
 import '../styles/service.css'
 import sky from '../assets/sky.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faComputer } from '@fortawesome/free-solid-svg-icons';
+import { faSearchengin } from '@fortawesome/free-brands-svg-icons';
+import { faFileCode} from '@fortawesome/free-solid-svg-icons';
+
+
 function Services() {
         return(
                 <div>
@@ -17,7 +20,7 @@ function Services() {
                         </div>
                         <div className="carte__service">
                                 <div className="carte__service__gauche carte">
-                                        <img src={ordinateur} alt='ordinateur' className="img__service"/>
+                                        <FontAwesomeIcon icon={faComputer} className="img__service" />
                                         <h2>UX DESIGN</h2>
                                         <p>L'<strong>UX Design</strong> est une méthode de<br></br>
                                         conception centrée sur l'utilisateur. Son but<br></br>
@@ -25,14 +28,14 @@ function Services() {
                                         optimale à l'internaute.</p>
                                 </div>
                                 <div className="carte__service__milieu carte">
-                                        <img src={tableaustatistique} alt='tableau statistique' className="img__service"/>
+                                        <FontAwesomeIcon icon={faSearchengin} className="img__service" />
                                         <h2>DEVELOPPEMENT WEB</h2>
                                         <p>Le <strong>développement de sites web</strong> repose sur<br></br>
                                         l'utilisation des langages HTML, CSS,<br></br>
                                         JavaScript et PHP.</p>
                                 </div>
                                  <div className="carte__service__droite carte">
-                                        <img src={fichierhtml} alt='fichier html' className="img__service"/>
+                                        <FontAwesomeIcon icon={faFileCode} className="img__service" />
                                         <h2>REFERENCEMENT</h2>
                                         <p>Le <strong>référencement naturel d'un site,</strong> aussi<br></br>
                                          appelé SEO, consiste à mettre des<br></br>
