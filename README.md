@@ -1,3 +1,20 @@
+# Avant de télécharger ce projet assurez vous
+
+- D'avoir Node.js et npm installés sur votre machine. Node.js est un environnement qui vous permet d'exécuter du JavaScript localement.
+
+Suivez ces étapes :
+
+Rendez-vous sur le site https://nodejs.org/fr/ et téléchargez la version recommandée de Node.js. Installez ensuite Node.js sur votre ordinateur. Une fois Node installé :
+A. Si vous avez téléchargé ce projet :
+
+1. Décompressez le fichier téléchargé.
+2. Placez-le dans un répertoire facile à retrouver.
+3. Ouvrez l'invite de commande (cmd) en appuyant sur Windows+R, par exemple.
+4. Accédez au répertoire du projet en tapant la commande cd chemin (par exemple, cd C:\Users\hyban\OneDrive\Bureau\CEF\Portfolio).
+5. Une fois dans le bon répertoire, exécutez la commande npm install ou yarn install pour installer les dépendances nécessaires.
+6. Après l'installation, lancez la commande npm run start. Une fois la commande lancée, copiez le lien qui vous est donné, par exemple, http://localhost:3000/, et collez-le dans la barre de recherche de votre navigateur.
+"Généralement le navigateur se lancera automatiquement"
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

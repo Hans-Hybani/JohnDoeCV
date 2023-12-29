@@ -6,11 +6,20 @@ h1,h2{
 p{
         font-weight: 400;
 }
+.accordion{
+        margin: 50px 20px 50px 20px ;
+}
+.accordion__bloc{
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.248);
+}
+
 .body__accordion{
         font-family: 'Nunito Sans', sans-serif;
 }
-.body__accordion img{
-        width: 20px;
+.icon__mention{
+        color: black;
+        font-size: 25px;
+        padding-right: 5px;
 }
 .contact__accordion{
         display: flex;
@@ -18,10 +27,14 @@ p{
         flex-direction: column;
 }
 .contact__acc{
-        color: #0d6efd;
+        color: black;
 }
 .contact__col{
-        color: black;
+        color: #0d6efd;
+}
+.contact__co{
+        text-decoration: none;
+
 }
 .contact__accordion a{
         text-decoration: none;

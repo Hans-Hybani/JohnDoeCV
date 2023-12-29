@@ -4,7 +4,8 @@ import sky from '../assets/sky.png';
 import vegetables from '../assets/vegetables.jpg';
 import sushi from '../assets/sushi.jpg';
 import lotus from '../assets/lotus.jpg';
-// import Button from "../components/button";
+import Card from 'react-bootstrap/Card';
+
 
 
 
@@ -20,36 +21,47 @@ function Realisation() {
                                 <hr></hr>
                         </div>
                         <div className="realisation__bloc">
-                                <div className="realisation__bloc__gauche realisation">
-                                        <img src={vegetables} alt="légume"/>
-                                        <div className="realisation__text">
-                                                <h2>Fresh food</h2>
-                                                <p>Réalisation d'un site avec commande en ligne.</p>
+                                <Card className="card">
+                                        <Card.Img variant="top" src={vegetables} />
+                                        <Card.Body className="card__body">
+                                        <Card.Title className="card__title">Fresh food</Card.Title>
+                                                <Card.Text>
+                                                        Réalisation d'un site avec commande en ligne.
+                                                </Card.Text>
                                                 <button type="button" className="buttonRealiation">voir</button>
-                                        </div> 
-                                        <p className="basDiv">Site réalisé avec PHP et MySQL</p>
-                                </div>
-                                <div className="realisation__bloc__milieu realisation">
-                                        <img src={sushi} alt="sushi"/>
-                                        <div className="realisation__text">
-                                                <h2>Restaurant Akira</h2>
-                                                <p>Réalisation d'un site vitrine.</p>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                                <small className="text-muted">Site réalisé avec PHP et MySQL</small>
+                                        </Card.Footer>
+                                </Card>
+                                <Card className="card">
+                                        <Card.Img variant="top" src={sushi} />
+                                        <Card.Body className="card__body">
+                                        <Card.Title className="card__title">Restaurant Akira</Card.Title>
+                                                <Card.Text>
+                                                        Réalisation d'un site vitrine.
+                                                </Card.Text>
                                                 <button type="button" className="buttonRealiation">voir</button>
-                                        </div>
-                                        <p className="basDiv">Site réalisé avec WordPres</p>
-                                </div>
-                                <div className="realisation__bloc__droite realisation">
-                                        <img src={lotus} alt="zen"/>
-                                        <div className="realisation__text">
-                                                <h2>Espace bie-etre</h2>
-                                                <p>Réalisation d'un site pour un practicien de bien etre.</p>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                                <small className="text-muted">Site réalisé avec WordPres</small>
+                                        </Card.Footer>
+                                </Card>
+                                <Card className="card">
+                                        <Card.Img variant="top" src={lotus} />
+                                        <Card.Body className="card__body">
+                                        <Card.Title className="card__title">Espace bie-etre</Card.Title>
+                                                <Card.Text>
+                                                        Réalisation d'un site pour un practicien de bien etre.
+                                                </Card.Text>
                                                 <button type="button" className="buttonRealiation">voir</button>
-                                        </div>
-                                        <p className="basDiv">Site réalisé avec HTML/CSS</p>
-                                </div>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                                <small className="text-muted">Site réalisé avec HTML/CSS</small>
+                                        </Card.Footer>
+                                </Card>
                         </div>
-                </div>
-                
+                </div>  
         )
 }
 

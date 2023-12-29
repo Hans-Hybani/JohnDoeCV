@@ -3,17 +3,11 @@ import softwaredeveloper from '../assets/softwaredeveloper.jpg'
 import developpeurBureau from '../assets/developpeurBureau.jpg'
 import '../styles/accueil.css'
 import '../styles/Button.css'
-import Button from "../components/button";
+import Button from 'react-bootstrap/Button';
 import ContextualExample from "../components/progressbar"
-
+import handleScrollToSection from "../components/aproposclick"
 
 function Accueil(props) {
-        const handleScrollToSection = () => {
-                const Apropos = document.getElementById('apropos');
-                if (Apropos) {
-                        Apropos.scrollIntoView({ behavior: 'smooth' });
-                }
-              };
         const titre = 'Bonjour, je suis John Doe'
         const sousTitre = 'Développeur full stack'
 
@@ -23,8 +17,7 @@ function Accueil(props) {
                                 <img src={softwaredeveloper} alt='fond ecran' className="img__image"/>
                                 <h1 className="h1__conteneur">{titre}</h1>
                                 <h2 className="h2__conteneur">{sousTitre}</h2>
-                                {/* <button className="all__button">En savoir plus</button> */}
-                                <Button className="all__button" onClick={handleScrollToSection} />
+                                <Button variant="primary" className="all__button" onClick={handleScrollToSection}>Voir plus</Button>{' '}
                         </div>
                         <div className="apropos__conteneur">
                                 <div className="apropos__conteneur__carte" id="apropos" >
